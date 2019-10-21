@@ -295,7 +295,10 @@ public class NamespaceService {
         ItemBO deletedItem = new ItemBO();
 
         deletedItem.setDeleted(true);
-        ItemDTO deletedItemDto = deletedItemDTOS.get(key);
+        ItemDTO deletedItemDto = new ItemDTO();
+        if (deletedItemDTOS.containsKey(key)) {
+          deletedItemDto = deletedItemDTOS.get(key);
+        }
         deletedItemDto.setKey(key);
         String oldValue = entry.getValue();
         deletedItem.setItem(deletedItemDto);
