@@ -140,8 +140,8 @@ public class ItemController {
 
   @GetMapping("/apps/{appId}/clusters/{clusterName}/namespaces/{namespaceName}/items/deleted")
   public List<ItemDTO> findDeletedItems(@PathVariable("appId") String appId,
-      @PathVariable("clusterName") String clusterName,
-      @PathVariable("namespaceName") String namespaceName) {
+                                        @PathVariable("clusterName") String clusterName,
+                                        @PathVariable("namespaceName") String namespaceName) {
     List<Commit> commits = commitService.find(appId, clusterName, namespaceName, null);
     if (Objects.nonNull(commits)) {
       List<Item> deletedItems = commits.stream()
