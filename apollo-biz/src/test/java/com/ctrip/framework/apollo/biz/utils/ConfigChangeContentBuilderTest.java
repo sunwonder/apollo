@@ -8,6 +8,10 @@ import com.ctrip.framework.apollo.biz.entity.Item;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * @author jian.tan
+ */
+
 public class ConfigChangeContentBuilderTest {
 
   private final ConfigChangeContentBuilder configChangeContentBuilder = new ConfigChangeContentBuilder();
