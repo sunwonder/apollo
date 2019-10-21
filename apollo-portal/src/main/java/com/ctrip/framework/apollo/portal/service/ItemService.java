@@ -177,6 +177,7 @@ public class ItemService {
             "namespace not exist. appId:%s, env:%s, clusterName:%s, namespaceName:%s", appId, env, clusterName,
             namespaceName));
       }
+      throw e;
     }
     return namespaceDTO.getId();
   }
