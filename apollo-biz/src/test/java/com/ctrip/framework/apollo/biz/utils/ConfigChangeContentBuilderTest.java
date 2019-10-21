@@ -20,8 +20,8 @@ public class ConfigChangeContentBuilderTest {
   @Before
   public void initConfig() {
 
-    Item createdItem = MockBeanFactory.mockItem(1, 1, "timeout", "100");
-    Item updatedItem = MockBeanFactory.mockItem(1, 1, "timeout", "1001");
+    Item createdItem = MockBeanFactory.mockItem(1, 1, "timeout", "100", 1);
+    Item updatedItem = MockBeanFactory.mockItem(1, 1, "timeout", "1001", 1);
 
     configChangeContentBuilder.createItem(createdItem);
     configChangeContentBuilder.updateItem(createdItem, updatedItem);

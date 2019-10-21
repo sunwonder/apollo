@@ -52,12 +52,12 @@ public class MockBeanFactory {
     return instance;
   }
 
-  public static Item mockItem(long id, long namespaceId, String itemKey, String itemValue) {
+  public static Item mockItem(long id, long namespaceId, String itemKey, String itemValue, int lineNum) {
     Item item = new Item();
     item.setId(id);
     item.setKey(itemKey);
     item.setValue(itemValue);
-    item.setLineNum(1);
+    item.setLineNum(lineNum);
     item.setNamespaceId(namespaceId);
     return item;
   }
