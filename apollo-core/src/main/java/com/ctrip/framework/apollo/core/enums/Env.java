@@ -19,7 +19,7 @@ import com.google.common.base.Preconditions;
  * @author Jason Song(song_s@ctrip.com)
  */
 public enum Env{
-  LOCAL, DEV, FWS, FAT, UAT, LPT, PRO, TOOLS, UNKNOWN;
+  LOCAL, DEV, FWS, FAT, UAT, LPT, PRO, TOOLS, UNKNOWN,SIT,BLIQ,CHNG,DEMO,FUN,PER,STAGING,IGEN,IGEN2,IGEN3,IGEN4,IGEN5;
 
   public static Env fromString(String env) {
     Env environment = EnvUtils.transformEnv(env);

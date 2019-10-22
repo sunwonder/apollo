@@ -31,6 +31,18 @@ public class LegacyMetaServerProvider implements MetaServerProvider {
     domains.put(Env.UAT, getMetaServerAddress(prop, "uat_meta", "uat.meta"));
     domains.put(Env.LPT, getMetaServerAddress(prop, "lpt_meta", "lpt.meta"));
     domains.put(Env.PRO, getMetaServerAddress(prop, "pro_meta", "pro.meta"));
+    domains.put(Env.SIT, getMetaServerAddress(prop, "sit_meta", "sit.meta"));
+    domains.put(Env.BLIQ, getMetaServerAddress(prop, "bliq_meta", "bliq.meta"));
+    domains.put(Env.CHNG, getMetaServerAddress(prop, "chng_meta", "chng.meta"));
+    domains.put(Env.DEMO, getMetaServerAddress(prop, "demo_meta", "demo.meta"));
+    domains.put(Env.FUN, getMetaServerAddress(prop, "fun_meta", "fun.meta"));
+    domains.put(Env.PER, getMetaServerAddress(prop, "per_meta", "per.meta"));
+    domains.put(Env.STAGING, getMetaServerAddress(prop, "staging_meta", "staging.meta"));
+    domains.put(Env.IGEN, getMetaServerAddress(prop, "igen_meta", "igen.meta"));
+    domains.put(Env.IGEN2, getMetaServerAddress(prop, "igen2_meta", "igen2.meta"));
+    domains.put(Env.IGEN3, getMetaServerAddress(prop, "igen3_meta", "igen3.meta"));
+    domains.put(Env.IGEN4, getMetaServerAddress(prop, "igen4_meta", "igen4.meta"));
+    domains.put(Env.IGEN5, getMetaServerAddress(prop, "igen5_meta", "igen5.meta"));
   }
 
   private String getMetaServerAddress(Properties prop, String sourceName, String propName) {
